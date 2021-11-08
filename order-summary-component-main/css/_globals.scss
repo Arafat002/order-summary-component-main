@@ -1,0 +1,75 @@
+html{
+    font-size:100%;
+    height:100vh;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to bottom,$Paleblue, $Verypaleblue);
+    line-height: 1.3;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+}
+
+#img1{
+    width:100%
+}
+
+.font-size{
+    font-size:700;
+}
+
+.flex{
+
+    display:flex;
+    &-j-c {
+        justify-content: center;
+    }
+
+    &-j-sb {
+        justify-content: space-between;
+
+    }
+    &-a-c{
+        align-items: center;
+
+    }
+    
+}
+
+.cancel:active{
+    color:black;
+}
+
+a:active{
+    text-decoration: none;
+ }
+
+.proceed{
+    text-decoration: none;
+}
+
+#change:active{
+    opacity:0.5;
+}
+
+.button:active{
+    opacity:0.5;
+}
+ 
+
+
+.hide-mobile{
+    @include breakpoint-up(large){
+    display:none;
+    }
+}
+
+.hide-desktop{
+    @include breakpoint-up(medium){
+    display:none;
+    }
+}

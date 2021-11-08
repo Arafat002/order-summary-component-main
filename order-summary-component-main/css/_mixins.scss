@@ -1,0 +1,25 @@
+@media (min-width:90em){
+
+}
+
+//VISIBILITY//
+
+//640px 1024px 1440px//
+$breakpoints-up: ("medium":40em,"large":64em,"xlarge":90em);
+
+//639px 1023px 1439px//
+$breakpoints-down: ("small":39.9375em,"medium":63.9375em,"89.9375":90em);
+
+// sadds//
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up,$size))
+    { @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (min-width: map-get($breakpoints-down,$size)){ 
+     @content;
+    }
+}
