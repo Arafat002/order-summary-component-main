@@ -7,13 +7,151 @@ html {
   
   body {
     margin: 0;
-    padding: 0;
+    /* padding: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#e0e8ff), to(#f5f7ff));
     background: linear-gradient(to bottom, #e0e8ff, #f5f7ff);
-    line-height: 1.3;
+    line-height: 1.3; */
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
   }
+
+  .bgimage{
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .ordercard{
+    box-shadow: 0 8px 16px 0 rgba(165, 182, 231, 0.71);
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 26.1rem;
+    margin: 0 auto;
+  }
+
+  .orderimg{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .orderdiv{
+    padding: 10px 40px;
+  }
+
+  .title{
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    font-size: 23px;
+    font-weight: 900;
+  }
+
+  .paragraph{
+    font-size: 18px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+  }
+
+  .order-flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e8ff4d;
+    padding: 1px 23px;
+    border-radius: 20px;
+  }
+
+  .order-flex-in{
+    display: flex;
+  }
+
+  .order-icon{
+    width: 45px;
+    height: 45px;
+    margin-top: 16px;
+    margin-right: 18px;
+  }
+
+  .order-plan{
+    color: hsl(223, 47%, 23%);
+    font-size: 17px;
+    font-weight: 900;
+  }
+
+  .order-plan span{
+      display: block;
+      color: hsl(224, 23%, 55%);
+      font-weight: 500;
+  }
+
+  .order-change {
+      color: hsl(245, 75%, 52%);
+      font-weight: 900;
+      margin-top: 30px;
+  }
+
+  .order-change:hover {
+      color: #210ec3a1;
+      text-decoration: none;
+  }
+
+  .order-proceed{
+      box-shadow: 0 8px 16px 0 rgba(56, 41, 224, 0.34);
+      font-size: 15px;
+      background-color: hsl(245, 75%, 52%);
+      color: #ffffff;
+      font-weight: 900;
+      display: inline-block;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      border-radius: 9px;
+      width: 93%;
+      margin-top: 20px;
+  }
+
+  .order-proceed:hover{
+      box-shadow: 0 8px 16px 0 rgba(56, 41, 224, 0.34);
+      background-color: #210ec3a1;
+  }
+
+  .order-cancel{
+      font-size: 17px;
+      font-weight: 900;
+      text-align: center;
+  }
+
+  .order-cancel a{
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+      
+  }
+
+  .order-cancel a:hover{
+      color: hsl(223, 47%, 23%);
+  }
+
+
+
+/*=================================================================
+  @media screen 560px
+==================================================================*/
+
+
+@media only screen and (max-width: 560px){
+    .ordercard {
+        width: 100%;
+    }
+
+    .orderdiv {
+        padding: 10px 14px;
+    }
+}
+
+
+
   
   #img1 {
     width: 100%;
